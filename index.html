@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="hashing.js" defer></script>
+    <title>Hasing</title>
+</head>
+<body>
+    <select name="cipherselect" id="cipherselect">
+        <option value="MD5">MD5</option>
+        <option value="SHA1">SHA-1</option>
+        <option value="SHA256">SHA-256</option>
+        <option value="AES">AES</option>
+        <option value="DES">DES</option>
+        <option value="rabbit">Rabbit</option>
+        <option value="RC4">RC4</option>
+    </select>
+    
+    <input type="text" id="plaintext">
+    <p>If needed, type key:</p>
+    <input type="text" id="key">
+    <button id="encrypt">Encrypt</button> 
+    <button id="decrypt">Decrypt</button>
+
+    <p id="output"></p>
+
+</body>
+</html>
